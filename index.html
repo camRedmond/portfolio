@@ -67,7 +67,7 @@
                 <h1 class="hero-title">
                     <span class="glitch" data-text="Your Name">Cameron Redmond</span>
                 </h1>
-                <p class="hero-subtitle">Software Engineer • DevOps • Full Stack Developer</p>
+                <p class="hero-subtitle">Software • DevOps • Full Stack</p>
             </div>
             <a href="#about" class="scroll-indicator">
                 <span>↓</span>
@@ -81,7 +81,7 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>Software engineer transitioning from infrastructure to full-stack development. With 3.5 years of professional experience in IT and systems administration at a high-tech aerospace startup, I've built a strong foundation in infrastructure design, networking, and security.</p>
-                        <p>Currently bridging hardware and software by collaborating with DevOps engineers to rebuild internal tools for hardware-in-the-loop testing. I'm passionate about creating scalable solutions, from designing datacenter infrastructure to building web applications that solve real problems.</p>
+                        <p>Currently bridging hardware and software by collaborating with DevOps engineers to rebuild internal tools for hardware-in-the-loop testing. I'm passionate about creating scalable solutions, from designing production grade systems to building web applications that solve real problems.</p>
                         <p>My recent projects include PaperRoute, a newsletter aggregation platform, and various full-stack applications. I'm actively pursuing the AWS Certified AI Practitioner certification while expanding my expertise in modern web development.</p>
                     </div>
                 </div>
@@ -184,24 +184,25 @@
                         </label>
                         <div class="project-content">
                             <div class="glass-card">
-                                <p>A comprehensive newsletter aggregation platform that allows users to read and discover newsletters from any provider in a single, unified interface. Built to solve the fragmented newsletter experience across multiple platforms and email clients.</p>
-                                <p><strong>Key Features:</strong></p>
+                                <p>A secure newsletter aggregation platform serving active users with a complete infrastructure stack: Postfix mail server, Nginx reverse proxy, WireGuard VPN, FastAPI backend, MariaDB database, and React frontend.</p>
+                                <p><strong>Technical Highlights:</strong></p>
                                 <ul class="resume-list">
-                                    <li>Autonomous indexing system that builds a global newsletter database</li>
-                                    <li>Comment and discussion system for community engagement on newsletters</li>
-                                    <li>Advanced search and discovery features to find new content</li>
-                                    <li>Intricate user-to-user analytics for personalized recommendations</li>
+                                    <li>Engineered for high availability, processing thousands of emails weekly</li>
+                                    <li>Automated summarization and categorization leveraging open large language models</li>
+                                    <li>Secure infrastructure with VPN tunneling and reverse proxy configuration</li>
                                     <li>Cross-platform newsletter aggregation from any provider</li>
+                                    <li>Real-time email processing and content delivery</li>
                                 </ul>
                                 <div class="project-tech">
                                     <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">PostgreSQL</span>
-                                    <span class="tech-tag">Redis</span>
-                                    <span class="tech-tag">Email APIs</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">MariaDB</span>
+                                    <span class="tech-tag">Postfix</span>
+                                    <span class="tech-tag">Nginx</span>
+                                    <span class="tech-tag">WireGuard</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="link-neon">In Development</a>
+                                    <a href="https://paperroute.app" class="link-neon" target="_blank" rel="noopener">View Live App</a>
                                 </div>
                             </div>
                         </div>
@@ -219,56 +220,22 @@
                         </label>
                         <div class="project-content">
                             <div class="glass-card">
-                                <p>A web application that aggregates and visualizes Formula 1 race data, providing detailed statistics, historical comparisons, and real-time race results. Demonstrates proficiency in API integration and data visualization.</p>
+                                <p>A real-time Formula 1 statistics dashboard that pulls race data within hours of race completion. Built with React and Node.js, leveraging the Ergast API for comprehensive F1 data access.</p>
                                 <p><strong>Features:</strong></p>
                                 <ul class="resume-list">
-                                    <li>Integration with F1 race results API for live data</li>
+                                    <li>Real-time race data integration using Ergast API and Axios</li>
                                     <li>Historical race statistics and driver performance tracking</li>
-                                    <li>Interactive charts and visualizations</li>
-                                    <li>Responsive design for mobile and desktop viewing</li>
+                                    <li>Interactive data visualizations and comparisons</li>
+                                    <li>Fast data processing to deliver results within hours of race completion</li>
                                 </ul>
                                 <div class="project-tech">
                                     <span class="tech-tag">React</span>
-                                    <span class="tech-tag">REST API</span>
-                                    <span class="tech-tag">Chart.js</span>
-                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Axios</span>
+                                    <span class="tech-tag">Ergast API</span>
                                 </div>
                                 <div class="project-links">
-                                    <a href="#" class="link-neon">View Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Hardware Testing Tool -->
-                    <div class="project-item">
-                        <input type="checkbox" id="project-3" class="project-toggle">
-                        <label for="project-3" class="project-header glass-card">
-                            <div class="project-title-row">
-                                <h3>Hardware-in-the-Loop Testing Platform</h3>
-                                <span class="expand-icon">▼</span>
-                            </div>
-                            <p class="project-summary">Internal tool for automated physical infrastructure testing</p>
-                        </label>
-                        <div class="project-content">
-                            <div class="glass-card">
-                                <p>Collaborating with DevOps engineers to rebuild an internal testing platform for hardware-in-the-loop validation of physical infrastructure. Streamlines the testing process for complex aerospace hardware systems.</p>
-                                <p><strong>Responsibilities:</strong></p>
-                                <ul class="resume-list">
-                                    <li>Redesigning legacy testing infrastructure with modern DevOps practices</li>
-                                    <li>Implementing automated test orchestration for hardware systems</li>
-                                    <li>Building RESTful APIs for test configuration and results management</li>
-                                    <li>Creating intuitive web interface for test monitoring and control</li>
-                                </ul>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">FastAPI</span>
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Docker</span>
-                                    <span class="tech-tag">PostgreSQL</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="link-neon">Internal Tool</a>
+                                    <a href="https://github.com/camRedmond/f1-stats" class="link-neon" target="_blank" rel="noopener">View on GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +249,7 @@
             <div class="container">
                 <h2 class="section-title">Resume</h2>
                 <div class="resume-actions">
-                    <a href="resume.pdf" class="btn-neon" download>Download PDF Resume</a>
+                    <a href="assets/Cameron Redmond - 2025 Resume.pdf" class="btn-neon" download>Download PDF Resume</a>
                 </div>
                 <div class="resume-content">
                     <!-- Experience -->
@@ -291,29 +258,27 @@
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>System Administrator</h4>
-                                <span class="resume-date">Jun 2024 - Present</span>
+                                <span class="resume-date">Jun 2025 - Present</span>
                             </div>
-                            <p class="resume-company">High-Tech Aerospace Startup • Canada</p>
+                            <p class="resume-company">Kepler Communications • Toronto, CA</p>
                             <ul class="resume-list">
-                                <li>Manage and maintain IT infrastructure for aerospace startup, including networking, security, and server administration</li>
-                                <li>Collaborate with DevOps team to rebuild internal hardware-in-the-loop testing platform</li>
-                                <li>Design and implement infrastructure solutions for datacenter colocation facilities</li>
-                                <li>Lead office relocation project, managing network design and physical infrastructure setup</li>
-                                <li>Serve as key stakeholder in security discussions and infrastructure architecture decisions</li>
+                                <li>Orchestrated the seamless migration of 50+ microservices to a Kubernetes-based infrastructure, enhancing security posture and achieving minimal downtime during the transition</li>
+                                <li>Collaborated with development teams to deploy and support new applications, ensuring seamless integration with existing infrastructure and optimal performance</li>
+                                <li>Managed and optimized AWS cloud costs, identifying and removing unused infrastructure to reduce spend by 20%</li>
                             </ul>
                         </div>
                         <div class="resume-item">
                             <div class="resume-item-header">
                                 <h4>IT Specialist</h4>
-                                <span class="resume-date">Jan 2021 - Jun 2024</span>
+                                <span class="resume-date">Jun 2022 - Jun 2025</span>
                             </div>
-                            <p class="resume-company">High-Tech Aerospace Startup • Canada</p>
+                            <p class="resume-company">Kepler Communications • Toronto, CA</p>
                             <ul class="resume-list">
-                                <li>Designed and deployed IT infrastructure from ground up for growing aerospace company</li>
-                                <li>Hands-on hardware and software management of servers, networking equipment, and infrastructure</li>
-                                <li>Implemented security best practices and network architecture for sensitive aerospace operations</li>
-                                <li>Managed multiple concurrent projects from conception to deployment</li>
-                                <li>Provided technical support across office operations and specialized aerospace systems</li>
+                                <li>Led the design and implementation of a Mobile Device Management (MDM) program using Microsoft Azure & Intune, enrolling 160+ devices across 120+ employees</li>
+                                <li>Spearheaded an 8-month cross-departmental project to build a cloud-based document sharing environment, ensuring seamless integration into existing infrastructure</li>
+                                <li>Orchestrated company-wide Slack migration and implemented custom Slack automations, including a bot delivering daily reports to managers</li>
+                                <li>Helped design and implement a robust backup strategy with nightly full-server backups, ensuring fast disaster recovery and zero data loss incidents</li>
+                                <li>Played a pivotal role in facilitating a company-wide relocation, minimizing downtime during the transfer of critical IT infrastructure and hardware</li>
                             </ul>
                         </div>
                     </div>
@@ -323,22 +288,13 @@
                         <h3 class="resume-heading">Education</h3>
                         <div class="resume-item">
                             <div class="resume-item-header">
-                                <h4>Bachelor of Science in Computer Science</h4>
+                                <h4>Bachelor of Science, Computer Science</h4>
                                 <span class="resume-date">2017 - 2021</span>
                             </div>
-                            <p class="resume-company">University</p>
-                            <p>Comprehensive computer science curriculum with focus on software development, algorithms, and system design</p>
+                            <p class="resume-company">Wilfrid Laurier University • Waterloo, CA</p>
                         </div>
                     </div>
 
-                    <!-- Certifications -->
-                    <div class="resume-section glass-card">
-                        <h3 class="resume-heading">Certifications</h3>
-                        <ul class="resume-list">
-                            <li><strong>AWS Certified AI Practitioner</strong> (In Progress - Actively Pursuing)</li>
-                        </ul>
-                        <p style="margin-top: var(--space-sm); color: var(--text-muted); font-size: 0.9rem;">Additional certifications planned in cloud infrastructure and DevOps</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -353,16 +309,19 @@
                     <h3 class="vibes-heading">Currently Listening</h3>
                     <div class="vibes-grid">
                         <a href="#" class="vibe-card glass-card" target="_blank" rel="noopener">
-                            <span class="vibe-icon">♫</span>
-                            <span class="vibe-text">Synthwave Essentials</span>
+                            <!-- <span class="vibe-icon">♫</span>
+                            <span class="vibe-text">Synthwave Essentials</span> -->
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/03xHbQthV1o7FiSieS86Ce?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </a>
                         <a href="#" class="vibe-card glass-card" target="_blank" rel="noopener">
-                            <span class="vibe-icon">♪</span>
-                            <span class="vibe-text">Lo-fi Beats</span>
+                            <!-- <span class="vibe-icon">♪</span>
+                            <span class="vibe-text">Lo-fi Beats</span> -->
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3F63vPO9NcMyTB46Gtt5yj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </a>
                         <a href="#" class="vibe-card glass-card" target="_blank" rel="noopener">
-                            <span class="vibe-icon">♬</span>
-                            <span class="vibe-text">Cyberpunk 2077 OST</span>
+                            <!-- <span class="vibe-icon">♬</span>
+                            <span class="vibe-text">Cyberpunk 2077 OST</span> -->
+                            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/39NDBdU5Xkm5pCFGa5kZtI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </a>
                     </div>
                 </div>
@@ -375,13 +334,13 @@
                             <strong>512KB Club</strong>
                             <p>The internet is too big - join the movement for lightweight websites</p>
                         </a>
-                        <a href="#" class="link-item glass-card" target="_blank" rel="noopener">
+                        <a href="https://github.com/orf/gping" class="link-item glass-card" target="_blank" rel="noopener">
                             <strong>Cool Tool</strong>
-                            <p>An amazing developer tool that changed my workflow</p>
+                            <p>QPing - Ping, but with a graph</p>
                         </a>
-                        <a href="#" class="link-item glass-card" target="_blank" rel="noopener">
-                            <strong>Inspiring Article</strong>
-                            <p>Thought-provoking read on the future of web development</p>
+                        <a href="https://urlahmed.com/2025/11/05/work-after-work-notes-from-an-unemployed-new-grad-watching-the-job-market-break/" class="link-item glass-card" target="_blank" rel="noopener">
+                            <strong>Interesting Article from Hacker News</strong>
+                            <p>Work, After Work: Notes From an Unemployed New Grad Watching the Job Market Break</p>
                         </a>
                     </div>
                 </div>
@@ -391,12 +350,12 @@
                     <h3 class="vibes-heading">Favorite Quotes</h3>
                     <div class="quotes-container">
                         <blockquote class="quote glass-card">
-                            <p>"The best way to predict the future is to invent it."</p>
-                            <cite>— Alan Kay</cite>
+                            <p>"Knowledge is power."</p>
+                            <cite>— Francis Bacon</cite>
                         </blockquote>
                         <blockquote class="quote glass-card">
-                            <p>"Simplicity is the soul of efficiency."</p>
-                            <cite>— Austin Freeman</cite>
+                            <p>"Everything around you that you call life was made up by people that were no smarter than you and you can change it, you can influence it, you can build your own things that other people can use."</p>
+                            <cite>— Steve Jobs</cite>
                         </blockquote>
                     </div>
                 </div>
@@ -405,11 +364,11 @@
                 <div class="vibes-subsection">
                     <h3 class="vibes-heading">Web Badges</h3>
                     <div class="badges-container">
-                        <!-- Add your 88x31 pixel badges here -->
-                        <!-- Example: <img src="assets/badge.gif" alt="Badge description" class="badge-88x31"> -->
-                        <p style="color: var(--text-muted); text-align: center; width: 100%;">
-                            Place your 88x31 pixel badges in the /assets folder and reference them here
-                        </p>
+                        <img src="assets/button356.png" alt="Web badge" class="badge-88x31">
+                        <img src="assets/ehbutton (2).gif" alt="eh button" class="badge-88x31">
+                        <img src="assets/fingerofgod.gif" alt="Finger of God" class="badge-88x31">
+                        <img src="assets/hetzner.gif" alt="Hetzner" class="badge-88x31">
+                        <img src="assets/vim.gif" alt="Vim" class="badge-88x31">
                     </div>
                 </div>
             </div>
@@ -420,11 +379,10 @@
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
-                    <p class="contact-intro">Let's connect and build something amazing together</p>
+                    <p class="contact-intro">LinkedIn hater, please email me</p>
                     <div class="social-links">
                         <a href="mailto:cam.redmond@protonmail.com" class="social-link">
                             <span class="social-icon">
-                                <!-- Replace with email SVG icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
 </svg>
@@ -433,7 +391,6 @@
                         </a>
                         <a href="https://github.com/camRedmond" class="social-link" target="_blank" rel="noopener">
                             <span class="social-icon">
-                                <!-- Replace with GitHub SVG logo -->
                             	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
 </svg>
@@ -442,7 +399,6 @@
                         </a>
                         <a href="https://linkedin.com/in/cameron-redmond" class="social-link" target="_blank" rel="noopener">
                             <span class="social-icon">
-                                <!-- Replace with LinkedIn SVG logo -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
 </svg>
@@ -451,7 +407,6 @@
                         </a>
                         <a href="https://x.com/0xREDZ" class="social-link" target="_blank" rel="noopener">
                             <span class="social-icon">
-                                <!-- Replace with Twitter/X SVG logo -->
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
   <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
 </svg>
@@ -467,8 +422,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Cameron Redmond. Built with pure CSS, no JavaScript.</p>
-            <p class="footer-meta">Total size: &lt;512KB | Member of the <a href="https://512kb.club" target="_blank" rel="noopener">512KB Club</a></p>
+		<p class="footer-meta">Member of <a href="https://512kb.club" target="_blank" rel="noopener">512KB Club</a> | <a href="https://no-js.club" target="_blank" rel="noopener">NO-JS Club</a></p>
         </div>
     </footer>
 </body>
