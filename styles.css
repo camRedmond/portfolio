@@ -632,7 +632,13 @@ a:hover {
 }
 
 .about-content {
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-text {
     max-width: 900px;
+    margin: 0 auto;
 }
 
 .about-text p {
