@@ -121,12 +121,48 @@ python3 -m http.server 8000
 
 ### Deployment
 
-This is a static site with no build process. Simply upload the files to any static hosting service:
+This is a static site with no build process.
+
+#### Simple Hosting (Static)
 
 - **GitHub Pages**: Push to `gh-pages` branch
 - **Netlify**: Drag and drop the folder
 - **Vercel**: Connect repository
 - **Cloudflare Pages**: Connect repository
+
+#### Production VPS (Nginx)
+
+For production deployment on a VPS with Nginx, see the complete guide:
+
+📖 **[DEPLOYMENT.md](DEPLOYMENT.md)** - Full production deployment guide
+
+Includes:
+- ✅ Nginx configuration with HTTP/2
+- ✅ SSL/TLS setup (Let's Encrypt)
+- ✅ Security headers (CSP, HSTS, etc.)
+- ✅ Gzip compression (280KB → ~50KB transfer)
+- ✅ Rate limiting and DDoS protection
+- ✅ Monitoring and health checks
+- ✅ Maintains 512KB + NO-JS Club status
+
+**Quick Start:**
+```bash
+# Clone to server
+git clone https://github.com/yourusername/portfolio.git /var/www/portfolio
+
+# Copy nginx config
+sudo cp /var/www/portfolio/nginx.conf /etc/nginx/sites-available/portfolio
+sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
+
+# Edit domain name
+sudo nano /etc/nginx/sites-available/portfolio
+
+# Get SSL certificate
+sudo certbot --nginx -d your-domain.com
+
+# Restart nginx
+sudo nginx -t && sudo systemctl restart nginx
+```
 
 ## 🎨 Customization
 
