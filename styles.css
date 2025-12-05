@@ -632,7 +632,16 @@ a:hover {
 }
 
 .about-content {
-    max-width: 900px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
 }
 
 .about-text p {
@@ -642,15 +651,20 @@ a:hover {
     margin-bottom: var(--space-sm);
 }
 
-.about-text p:first-of-type::first-letter {
-    font-size: 3rem;
-    font-weight: 300;
-    color: var(--color-accent);
-    float: left;
-    line-height: 0.8;
-    margin-right: 0.5rem;
-    margin-top: 0.2rem;
+.about-image-wrapper {
+    flex-shrink: 0;
 }
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--color-accent);
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 0 30px var(--color-purple-glow);
+}
+
 
 /* ==========================================
    SKILLS SECTION
@@ -846,7 +860,7 @@ a:hover {
 .project-content .glass-card {
     border: none;
     border-left: 3px solid var(--color-accent);
-    border-radius: 0;
+    border-radius: 8px;
     padding: var(--space-md);
     padding-left: var(--space-lg);
     margin-left: 0;
@@ -1037,6 +1051,7 @@ a:hover {
     text-align: center;
     min-height: 150px;
     transition: all var(--transition-medium) ease;
+    border-radius: 8px;
 }
 
 .vibe-card:hover {
@@ -1067,6 +1082,7 @@ a:hover {
     padding: var(--space-md);
     transition: all var(--transition-medium) ease;
     display: block;
+    border-radius: 8px;
 }
 
 .link-item:hover {
@@ -1358,6 +1374,22 @@ a:hover {
 
     .social-links {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About section mobile layout */
+    .about-content {
+        flex-direction: column;
+        gap: var(--space-lg);
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 150px;
+        height: 150px;
     }
 }
 
