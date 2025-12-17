@@ -48,5 +48,10 @@ Thumbs.db
 desktop.ini
 
 
+# Server/Infrastructure configs (sensitive)
 nginx*
+monitor.sh
 docs/
+
+# Claude Code
+.claude/
