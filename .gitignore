@@ -46,3 +46,7 @@ Temporary Items
 # System files
 Thumbs.db
 desktop.ini
+
+
+nginx*
+docs/
