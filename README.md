@@ -4,7 +4,7 @@ Personal portfolio website.
 
 ## About
 
-I'm a DevOps engineer at Kepler Communications in Toronto. I work on Kubernetes migrations, infrastructure automation, and internal tooling. Previously worked as an IT Specialist at the same company for 3 years.
+I'm a DevOps engineer in Toronto. I work on Kubernetes migrations, infrastructure automation, and internal tooling.
 
 BS in Computer Science from Wilfrid Laurier University.
 
