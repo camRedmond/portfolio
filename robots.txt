@@ -1,0 +1,6 @@
+# robots.txt for camredmond.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://camredmond.com/sitemap.xml

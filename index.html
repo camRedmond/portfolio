@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Cameron Redmond - DevOps Engineer and AI builder. Working on Kubernetes infrastructure at Kepler Communications and building Aseoka, an autonomous SEO agent platform.">
+  <title>Cameron Redmond</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+  <script src="halftone.js" defer></script>
+</head>
+
+<body>
+  <canvas id="halftone-canvas"></canvas>
+  <nav>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <span class="sun">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </span>
+      <span class="moon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="profile-image">
+          <img src="assets/images/me.webp" alt="Cameron Redmond" width="160" height="160">
+        </div>
+        <div class="hero-text">
+          <h1>Cameron Redmond</h1>
+          <p class="subtitle">
+            <span class="role">System Administrator</span>
+            <span class="role">DevOps Engineer</span>
+            <span class="role">AI Enthusiast</span>
+          </p>
+          <div class="status">
+            <span class="status-dot"></span>
+            <span>Toronto, CA / Manhattan, NY</span>
+            <span class="divider">•</span>
+            <span>🇨🇦 🇺🇸 Dual Citizen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="content glass">
+        <p>I'm a curious, hands-on infrastructure engineer who enjoys building systems that scale and endure. At Kepler
+          Communications, I focus on Kubernetes, automation, and CI/CD, helping teams ship with confidence.</p>
+
+        <p>I grew with the company from IT into platform engineering, learning how to design for growth, reliability,
+          and speed.</p>
+
+        <p>I care deeply about modern DevOps practices, strong developer experience, and the emerging space where AI
+          meets infrastructure and product. I'm motivated by ownership, hard technical challenges, and building tools
+          that people rely on.</p>
+
+        <p>Outside of engineering, I spend time golfing, exploring fashion, and building small projects that push me
+          into new areas.</p>
+
+        <div class="tech-stack">
+          <span>Python</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Django</span>
+          <span>FastAPI</span>
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>Claude API</span>
+          <span>PostgreSQL</span>
+          <span>Redis</span>
+          <span>AWS</span>
+          <span>Azure</span>
+          <span>Kubernetes</span>
+          <span>Docker</span>
+          <span>Ansible</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work">
+      <div class="section-header">
+        <h2>Work</h2>
+        <a href="assets/Cameron Redmond - 2026.pdf" class="resume-card" download>
+          <svg class="resume-card-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          <div class="resume-card-text">
+            <span class="resume-card-name">Resume</span>
+            <span class="resume-card-meta">PDF · 2026</span>
+          </div>
+          <svg class="resume-card-dl" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+        </a>
+      </div>
+      <div class="content glass">
+        <div class="work-item">
+          <div class="work-header">
+            <h3>System Administrator</h3>
+            <span class="work-meta">Jun 2025 - Present</span>
+          </div>
+          <p class="work-company">Kepler Communications</p>
+          <ul class="work-list">
+            <li>Led the migration of 50+ production services from standalone hosts into a unified Kubernetes
+              environment, converting legacy workloads into containerized applications with improved resilience,
+              observability, and backup configuration.</li>
+            <li>Collaborated closely with senior DevOps engineers to refine GitLab CI pipelines, implement controlled
+              deployment workflows, and standardize infrastructure practices across a large multi-team codebase.</li>
+            <li>Supported the redevelopment of Kepler's hardware management platform by contributing to backend logic
+              (Python/Django), a React-based UI, and integrations with NetBox as a single source of truth for tracking
+              devices, reservations, and HIL (Hardware-in-the-Loop) testing.</li>
+            <li>Maintained and expanded monitoring stacks using Prometheus, Grafana, CheckMK, and Uptime Kuma, ensuring
+              visibility across satellite operations, development servers, and production systems.</li>
+            <li>Participated in on-call rotations for IT and satellite operations, performing incident response,
+              troubleshooting, and system stabilization under strict uptime requirements.</li>
+            <li>Conducted IAM administration, SSO configuration, least-privilege reviews, and access audits to support
+              compliance for government-related and secure information workflows.</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <div class="work-header">
+            <h3>IT Specialist</h3>
+            <span class="work-meta">Jun 2022 - Jun 2025</span>
+          </div>
+          <p class="work-company">Kepler Communications</p>
+          <ul class="work-list">
+            <li>Designed and operationalized a company-wide Intune/Azure MDM program, bringing 160+ devices under
+              unified configuration, security policy enforcement, and automated provisioning.</li>
+            <li>Spearheaded an 8-month initiative to build a cloud-based document management and collaboration
+              environment, integrating permissions, identity management, and automated migration processes.</li>
+            <li>Executed a full Slack-to-Slack migration and developed workflow automations, including daily reporting
+              bots that improved visibility for leadership and engineering teams.</li>
+            <li>Helped establish a comprehensive backup and disaster-recovery framework with nightly full-server
+              snapshots and automated integrity checks—resulting in zero data-loss incidents.</li>
+            <li>Orchestrated the technology portion of a company-wide office relocation, coordinating the teardown,
+              transport, and rebuild of critical IT systems with minimal operational disruption.</li>
+            <li>Acted as the primary IT liaison for onboarding, cross-department communication, and coordination with
+              external vendors and clients. Provided executive-level support and represented IT in internal
+              communication initiatives with HR and Marketing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="content glass education-section">
+        <h3 class="education-header">Education</h3>
+        <div class="work-item">
+          <div class="work-header">
+            <h3>BS Computer Science</h3>
+            <span class="work-meta">2017 - 2021</span>
+          </div>
+          <p class="work-company">Wilfrid Laurier University</p>
+          <p>Coursework: Data Structures, Algorithms, Databases, Computer Systems, Machine Learning, Cryptography,
+            Astronomy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="content glass">
+        <div class="project-item">
+          <div class="project-header">
+            <h3>
+              <a href="https://aseoka.com" class="project-title">
+                <span>ASEOKA</span>
+                <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            </h3>
+          </div>
+          <p>An autonomous SEO agent that lives in your infrastructure, detects issues across 120+ SEO issue types, and
+            automatically opens PRs with the code fixes—like Dependabot, but for SEO. In production since Jan 2026.</p>
+          <p class="project-features-label">Technical Highlights:</p>
+          <ul class="project-list">
+            <li>LangGraph + LangChain agent with tiered LLM strategy (Haiku/Sonnet 4) for cost-efficient reasoning and
+              fix generation</li>
+            <li>5 specialized memory systems that learn from each scan cycle, building a playbook of proven fix patterns
+            </li>
+            <li>GitHub/GitLab PR creation with sandbox validation before any fix is applied</li>
+            <li>Competitive intelligence dashboard with gap analysis and priority scoring across multiple sites</li>
+            <li>Multi-tenant architecture with per-client agents, hub coordination server, and real-time monitoring via
+              Prometheus and Grafana</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangGraph</span>
+            <span>LangChain</span>
+            <span>Next.js</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h3>
+              <a href="https://careercard.co" class="project-title">
+                <span>CareerCard</span>
+                <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            </h3>
+            <a href="https://github.com/camRedmond/careercard" class="github-link"
+              aria-label="View CareerCard on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+            </a>
+          </div>
+          <p>A comprehensive career platform enabling anyone to create premium ATS-friendly resumes with custom digital
+            business cards featuring Apple Wallet integration, and personalized portfolio websites for showcasing their
+            digital career.</p>
+          <p class="project-features-label">Features:</p>
+          <ul class="project-list">
+            <li>Premium ATS-optimized resume builder with modern templates</li>
+            <li>Digital business cards with Apple Wallet integration for seamless sharing</li>
+            <li>Personal portfolio website generator with HTML/CSS output</li>
+            <li>Professional career branding tools in one unified platform</li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h3>
+              <a href="https://paperroute.app" class="project-title">
+                <span>PaperRoute</span>
+                <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            </h3>
+          </div>
+          <p>A secure newsletter aggregation platform serving active users with a complete infrastructure stack: Postfix
+            mail server, Nginx reverse proxy, WireGuard VPN, FastAPI backend, MariaDB database, and React frontend.</p>
+          <p class="project-features-label">Technical Highlights:</p>
+          <ul class="project-list">
+            <li>Engineered for high availability, processing thousands of emails weekly</li>
+            <li>Automated summarization and categorization leveraging open large language models</li>
+            <li>Secure infrastructure with VPN tunneling and reverse proxy configuration</li>
+            <li>Cross-platform newsletter aggregation from any provider</li>
+            <li>Real-time email processing and content delivery</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>MariaDB</span>
+            <span>Postfix</span>
+            <span>Nginx</span>
+            <span>WireGuard</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <h3>
+              <span class="project-title">
+                <span>F1 Race Statistics</span>
+              </span>
+            </h3>
+            <a href="https://github.com/camRedmond" class="github-link" aria-label="View F1 Race Statistics on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              </svg>
+            </a>
+          </div>
+          <p>A real-time Formula 1 statistics dashboard that pulls race data within hours of race completion. Built with
+            React and Node.js, leveraging the Ergast API for comprehensive F1 data access.</p>
+          <p class="project-features-label">Features:</p>
+          <ul class="project-list">
+            <li>Real-time race data integration using Ergast API and Axios</li>
+            <li>Historical race statistics and driver performance tracking</li>
+            <li>Interactive data visualizations and comparisons</li>
+            <li>Fast data processing to deliver results within hours of race completion</li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Axios</span>
+            <span>Ergast API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elsewhere -->
+    <section id="elsewhere">
+      <h2>Else</h2>
+      <div class="content glass">
+        <blockquote class="quote">
+          <p>"Everything around you that you call life was made up by people that were no smarter than you and you can
+            change it, you can influence it, you can build your own things that other people can use."</p>
+          <cite>— Steve Jobs</cite>
+        </blockquote>
+
+        <hr class="elsewhere-divider">
+
+        <p class="listening-label">Currently listening</p>
+        <div class="spotify-stack">
+          <iframe style="border-radius:8px"
+            src="https://open.spotify.com/embed/track/03xHbQthV1o7FiSieS86Ce?utm_source=generator" width="100%"
+            height="80" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            title="Spotify track 1"></iframe>
+          <iframe style="border-radius:8px"
+            src="https://open.spotify.com/embed/track/3F63vPO9NcMyTB46Gtt5yj?utm_source=generator" width="100%"
+            height="80" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            title="Spotify track 2"></iframe>
+          <iframe style="border-radius:8px"
+            src="https://open.spotify.com/embed/track/39NDBdU5Xkm5pCFGa5kZtI?utm_source=generator" width="100%"
+            height="80" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+            title="Spotify track 3"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="content glass">
+        <div class="contact-links">
+          <a href="mailto:cam.redmond@protonmail.com" class="contact-link">
+            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>cam.redmond@protonmail.com</span>
+          </a>
+          <a href="https://github.com/camRedmond" class="contact-link">
+            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+            <span>/camRedmond</span>
+          </a>
+          <a href="https://x.com/0xREDZ" class="contact-link">
+            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+            <span>/0xREDZ</span>
+          </a>
+          <a href="https://linkedin.com/in/cameron-redmond" class="contact-link">
+            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            <span>/in/cameron-redmond</span>
+          </a>
+        </div>
+        <p class="contact-note">LinkedIn hater please email me</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-badges">
+        <a href="https://512kb.club" class="badge-link">
+          <img src="https://512kb.club/assets/images/green-team.svg" alt="512KB Club" width="88" height="31">
+        </a>
+        <img src="assets/badges/ehbutton (2).gif" alt="Canada" width="88" height="31">
+        <img src="assets/badges/hetzner.gif" alt="Hetzner" width="88" height="31">
+        <img src="assets/badges/fingerofgod.gif" alt="Finger of God" width="88" height="31">
+        <img src="assets/badges/vim.gif" alt="Vim" width="88" height="31">
+        <img src="assets/badges/rs_car.gif" alt="RS Car" width="88" height="31">
+        <img src="assets/badges/gc_augusta.gif" alt="Augusta National" width="88" height="31">
+        <img src="assets/badges/button356.png" alt="Web badge" width="88" height="31">
+      </div>
+      <p class="footer-text">Built with ❤️. No frameworks, no bloat.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
