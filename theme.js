@@ -1,28 +1,17 @@
-// Minimal theme toggle with localStorage persistence
-// Defaults to light mode
+// Theme — follows system preference on load, toggles on click, no persistence
 (function() {
   'use strict';
 
-  // Get saved theme or default to light
-  const savedTheme = localStorage.getItem('theme') || 'light';
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
 
-  // Apply theme immediately (before DOMContentLoaded to prevent flash)
-  document.documentElement.setAttribute('data-theme', savedTheme);
-
-  // Toggle function
   function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    const current = document.documentElement.getAttribute('data-theme');
+    document.documentElement.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
   }
 
-  // Attach to button after DOM loads
   document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.getElementById('theme-toggle');
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', toggleTheme);
-    }
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.addEventListener('click', toggleTheme);
   });
 })();
