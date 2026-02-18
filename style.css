@@ -934,6 +934,25 @@ footer {
   }
 }
 
+/* Touch device hover fix — prevent transform states getting stuck after tap
+   ============================================================================= */
+@media (hover: none) {
+  #theme-toggle:hover,
+  .nav-links a:hover::after,
+  .tech-stack span:hover,
+  .resume-card:hover,
+  .resume-card:hover .resume-card-dl,
+  .project-title:hover,
+  .github-link:hover,
+  .project-tech span:hover,
+  .contact-link:hover,
+  .reading-card:hover,
+  .footer-badges img:hover,
+  .badge-link:hover img {
+    transform: none;
+  }
+}
+
 /* Focus visible for keyboard navigation */
 :focus:not(:focus-visible) {
   outline: none;
