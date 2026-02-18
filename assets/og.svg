@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="13" r="2.5" fill="#8b5cf6"/>
+    </pattern>
+    <linearGradient id="dot-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="dot-mask">
+      <rect x="600" y="0" width="600" height="630" fill="url(#dot-fade)"/>
+    </mask>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8f6f3"/>
+
+  <!-- Dot grid (right half, fades in from left) -->
+  <rect x="600" y="0" width="600" height="630" fill="url(#dots)" mask="url(#dot-mask)" opacity="0.3"/>
+
+  <!-- Purple accent bar (left edge) -->
+  <rect x="0" y="0" width="6" height="630" fill="#8b5cf6"/>
+
+  <!-- Name -->
+  <text x="80" y="240"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="80" font-weight="700" fill="#2a2a2a" letter-spacing="-2">Cameron Redmond</text>
+
+  <!-- Role -->
+  <text x="80" y="308"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="34" font-weight="400" fill="#6a6a6a">Infrastructure Engineer</text>
+
+  <!-- Company (accent colour) -->
+  <text x="80" y="360"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="28" font-weight="400" fill="#8b5cf6">Kepler Communications</text>
+
+  <!-- Domain (monospace, bottom) -->
+  <text x="80" y="568"
+    font-family="'SF Mono', 'Cascadia Code', 'Consolas', 'Courier New', monospace"
+    font-size="22" fill="#9a9a9a">camredmond.com</text>
+</svg>
