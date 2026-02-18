@@ -737,6 +737,8 @@ nav {
 .reading-tag--article { color: #0ea5e9; }
 .reading-tag--book    { color: #f97316; }
 .reading-tag--tool    { color: var(--accent); }
+.reading-tag--essay   { color: #10b981; }
+.reading-tag--video   { color: #ef4444; }
 
 .reading-title {
   font-size: 0.88rem;
